@@ -1,0 +1,124 @@
+.header2{
+    height:60px;
+    background-color: black;
+    position:sticky;
+    display:flex;
+    align-items:center;
+    top:0;
+    z-index:100;
+}
+.header__logo{
+    margin :0 20px;
+    margin-top:14px;
+    width:75px;
+    object-fit:contain;
+}
+.header__search{
+    border:none;
+    display:flex;
+    flex:1;
+    align-items: center;
+
+   
+}
+i{
+    position:absolute;
+    padding:20px;
+    color:rgb(47, 39, 170);
+}
+.header__searchinput{
+    border:none;
+    padding-left:40px;
+    width:100%;
+    padding-top:7px;
+    padding-bottom: 7px;
+    height:17px;
+    border-radius:5px;
+    font-size:15px;
+    border-style:solid;
+    border-color:rgb(151, 42, 84);
+}
+.header__searchinput:focus{
+    border-style:solid;
+    border-color:yellow;
+    background:linear-gradient(to right bottom,#41B3A3,#297486);
+    color:white;
+}
+.header__searchlogo{
+    padding:6px;
+    background-color:#3ccacf;
+}
+.header__nav{
+    display:flex;
+    justify-content:space-evenly;
+}
+.header__nav__options{
+    display:flex;
+    flex-direction: column;
+    color:white;
+    margin-left:10px;
+    margin-right: 10px;
+
+}
+.header__nav__optionone{
+    font-size:10px;
+}
+.header__nav__optiontwo{
+    font-size:15px;
+    font-weight:800;
+    
+}
+.header__nav__optiontwo1{
+    font-size:15px;
+    font-weight:800;
+    text-align:center;
+    
+}
+
+.header__nav__optionbasket{
+    display:flex;
+    color:white;
+    align-items:center;
+    
+}
+.header__basketcount{
+    padding-left:10px;
+    padding-right: 10px;
+}
+.button-style{
+ margin-left:10px;
+  color:white;
+  border:none;
+  padding: 8px;
+  border-radius:8px;
+  background:linear-gradient(to left bottom,rgb(139, 24, 101),rgb(36, 140, 158))
+
+}
+.main-style{
+    background-image:linear-gradient(to right bottom, rgba(50, 135, 146, 0.62),rgba(206, 34, 91, 0.58)),url('https://static.businessworld.in/article/article_extra_large_image/1531999678_oybjVi_hackr_resize.jpeg');
+    width:100%;
+    height:100%;
+    padding-bottom:13%;
+}
+.head-style{
+    font-size:50px;
+    text-align:center;
+    text-transform:uppercase;
+    color:rgb(24, 4, 17);
+    
+}
+.head2-style{
+    margin-left:10%;
+    font-size:20px;
+    background-color:white;
+    margin-right:10%;
+    padding:20px;
+    border-radius:30px;
+}
+.cardflex{ 
+    display:flex; 
+    padding-left:13%;
+}
+.linkstyle{
+    text-decoration:none;
+}

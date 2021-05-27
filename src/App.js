@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {BrowserRouter,Route,Switch,Redirect} from 'react-router-dom';
+import Header from './Components/Header.js';
+import Login from './Components/Login';
+import Signup from './Components/Signup';
+import {Stateprovider} from './Components/Stateprovider';
+import Reducer, {initialState} from './InitialState.js';
+import Videocall from './Components/Videocall';
+import Problem from './Components/Problem';
 
-function App() {
+const App=()=>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Stateprovider initialstate={initialState} reducer={Reducer}>
+      <BrowserRouter>
+        <div className="App">
+          <Switch>
+            <Route path="/login" exact>
+            <Header />
+              <Login />
+            </Route>
+            <Route path="/signup" exact>
+            <Header />
+              <Signup />
+            </Route>
+            <Route path="/videocall" exact>
+              <Videocall />
+            </Route>
+            <Route path="/uproblem" exact>
+              <Problem />
+            </Route>
+            <Route path="/">
+              <Header />
+            </Route>
+          </Switch>
+        </div>
+      </BrowserRouter>
+    </Stateprovider>
+  );  
 }
-
 export default App;
